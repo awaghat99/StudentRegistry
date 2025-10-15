@@ -10,7 +10,7 @@ import java.util.Collections;
 
 public class StudentRegistry {
     private List<Student> students = new ArrayList<>();
-    private Set<String> courses = new HashSet<>();
+    public Set<String> courses = new HashSet<>();
     private Map<String, List<String>> studentCourses = new HashMap<>();
     private Map<String, Integer> courseCount = new HashMap<>();
 

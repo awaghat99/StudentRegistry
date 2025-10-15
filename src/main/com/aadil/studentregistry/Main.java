@@ -21,7 +21,11 @@ public class Main {
         System.out.println("Alice's courses: " + registry.getStudentCourses("001"));
         System.out.println("Bob's courses: " + registry.getStudentCourses("002"));
 
-        registry.removeCourseForStudent("002", "Math");
+        registry.removeCourseForStudent("002", "History");
         registry.printAllStudents();
+        System.out.println(registry.courses);
+        registry.enrollStudentInCourse("001", "Quantam Mechanics");
+        registry.printAllStudents();
+        System.out.println(registry.courses);
     }
 }
